@@ -6,8 +6,8 @@ This repository is the public-safe foundation for an end-to-end drug intelligenc
 
 ## Status
 
-This public repository has completed the first local milestone and is moving
-through the second: chemistry contracts and legacy baseline audit.
+This public repository has completed the public-safe foundation, chemistry
+contracts, legacy baseline audit, and public-fixture GNN benchmark plumbing.
 
 Included now:
 - repository structure for a clean Python package
@@ -19,6 +19,9 @@ Included now:
 - optional RDKit feature extraction module
 - framework-neutral molecular graph conversion
 - legacy GNN baseline audit and model card
+- config-driven CPU GNN benchmark with five encoder families
+- random, drug-disjoint, and scaffold-group split APIs
+- synthetic benchmark metrics/report artifacts
 
 Not included:
 - raw DrugBank data
@@ -68,7 +71,7 @@ Milestone progress is tracked in [docs/roadmap.md](docs/roadmap.md):
 
 1. Public-safe foundation
 2. Chemistry feature extraction and legacy baseline audit
-3. Reproducible GNN benchmark
+3. Reproducible GNN benchmark infrastructure
 4. Biomedical knowledge graph layer
 5. Evidence-grounded retrieval assistant
 6. Multimodal interaction modeling
@@ -101,6 +104,23 @@ Install optional chemistry dependencies when working on RDKit-backed features:
 ```bash
 python -m pip install -e ".[dev,chem]"
 ```
+
+Install GNN dependencies:
+
+```bash
+python -m pip install -e ".[dev,chem,gnn]"
+```
+
+Run the public synthetic smoke benchmark:
+
+```bash
+python scripts/train_gnn_baseline.py \
+  --config configs/sample-gin.toml \
+  --output-dir artifacts/sample-benchmark
+```
+
+See [docs/gnn-benchmark.md](docs/gnn-benchmark.md) for supported encoders,
+split strategies, output contracts, and limitations.
 
 ## Repository Layout
 

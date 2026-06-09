@@ -15,7 +15,7 @@ def test_public_drug_fixtures_are_valid() -> None:
 
     records = [DrugRecord(**row) for row in rows]
 
-    assert len(records) == 2
+    assert len(records) == 10
     assert all(record.source == "synthetic" for record in records)
     assert all(record.validate() == [] for record in records)
 

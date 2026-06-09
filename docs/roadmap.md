@@ -45,6 +45,19 @@ Target outcome:
 - support random, drug-disjoint, and scaffold-style splits
 - emit metrics JSON and Markdown reports
 
+Status:
+- public fixture benchmark implementation complete locally
+- full scientific benchmark pending a legal, versioned dataset manifest
+
+Evidence:
+- `src/drug_intelligence/models/`
+- `src/drug_intelligence/evals/`
+- `src/drug_intelligence/benchmarking/`
+- `scripts/train_gnn_baseline.py`
+- `configs/sample-gin.toml`
+- `docs/gnn-benchmark.md`
+- `reports/sample-benchmark/`
+
 ## Milestone 4: Biomedical Knowledge Graph Layer
 
 Target outcome:

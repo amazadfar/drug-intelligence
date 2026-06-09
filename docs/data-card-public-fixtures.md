@@ -21,7 +21,7 @@ Files:
 - `examples/sample_references.jsonl`
 
 Current record counts:
-- drugs: 2
+- drugs: 10
 - interactions: 1
 - references: 1
 
@@ -51,6 +51,8 @@ Inappropriate uses:
 ## Known Limitations
 
 - Too small for ML training.
+- The GNN smoke benchmark derives synthetic pair labels from these molecules only
+  to validate training and evaluation plumbing.
 - Not representative of real pharmacology distributions.
 - Interaction labels are synthetic and do not encode real clinical evidence.
 - No patient, dosage, route, timing, or disease context is represented.

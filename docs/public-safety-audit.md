@@ -107,6 +107,34 @@ rg -n "(public_user_password|keys\\.env|api[_-]?key|secret|token|password|DrugBa
 result: documentation-only warnings; no secret values found
 ```
 
+Milestone 3 validation after adding GNN benchmark infrastructure:
+
+```text
+.venv/bin/python -m pip install -e ".[dev,chem,gnn]"
+result: passed; installed PyTorch 2.12.0 and PyTorch Geometric 2.8.0
+
+.venv/bin/python -m compileall src tests scripts
+result: passed
+
+.venv/bin/python -m pytest -q
+result: passed, 21 tests
+
+.venv/bin/python -m ruff check .
+result: passed
+
+python scripts/train_gnn_baseline.py --config configs/sample-gin.toml
+result: passed; deterministic JSON and Markdown reports generated
+
+find . -path './.git' -prune -o -path './.venv' -prune -o -type f -size +1M -print
+result: no files found
+
+rg -n "(public_user_password|keys\\.env|api[_-]?key|secret|token|password|DrugBank)" .
+result: documentation-only warnings; no secret values found
+```
+
+Local Python was 3.14.5. Torch/PyG emitted upstream deprecation warnings for
+Python 3.14 internals; the GitHub Actions workflow targets Python 3.11.
+
 Not executed because tools were not installed in this environment:
 
 ```text

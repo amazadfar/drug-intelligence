@@ -1,0 +1,84 @@
+{
+  "benchmark": "synthetic-public-fixture-smoke",
+  "config": {
+    "batch_size": 8,
+    "dropout": 0.1,
+    "encoder": "gin",
+    "epochs": 5,
+    "hidden_dim": 32,
+    "learning_rate": 0.001,
+    "num_heads": 2,
+    "num_layers": 2,
+    "seed": 42,
+    "severity_weight": 0.5,
+    "split_strategy": "random"
+  },
+  "dataset": {
+    "dropped_pairs": 0,
+    "drugs": 10,
+    "pairs": 45,
+    "test_pairs": 9,
+    "train_pairs": 27,
+    "validation_pairs": 9
+  },
+  "environment": {
+    "device": "cpu",
+    "python_version": "3.14.5",
+    "torch_version": "2.12.0+cu130"
+  },
+  "history": [
+    {
+      "epoch": 1.0,
+      "train_loss": 37.303163051605225,
+      "validation_mechanism_brier": 0.4444410800933838,
+      "validation_mechanism_f1_macro": 0.028571428997176036,
+      "validation_mechanism_f1_micro": 0.06666667014360428,
+      "validation_severity_accuracy": 0.1746031790971756,
+      "validation_severity_f1_macro": 0.1315891519188881
+    },
+    {
+      "epoch": 2.0,
+      "train_loss": 26.98270606994629,
+      "validation_mechanism_brier": 0.3539886474609375,
+      "validation_mechanism_f1_macro": 0.028571428997176036,
+      "validation_mechanism_f1_micro": 0.07692307978868484,
+      "validation_severity_accuracy": 0.2063492089509964,
+      "validation_severity_f1_macro": 0.20705129019916058
+    },
+    {
+      "epoch": 3.0,
+      "train_loss": 18.43123960494995,
+      "validation_mechanism_brier": 0.2994227409362793,
+      "validation_mechanism_f1_macro": 0.028571428997176036,
+      "validation_mechanism_f1_micro": 0.095238097012043,
+      "validation_severity_accuracy": 0.2380952388048172,
+      "validation_severity_f1_macro": 0.1835775375366211
+    },
+    {
+      "epoch": 4.0,
+      "train_loss": 13.460483312606812,
+      "validation_mechanism_brier": 0.21178142726421356,
+      "validation_mechanism_f1_macro": 0.0,
+      "validation_mechanism_f1_micro": 0.0,
+      "validation_severity_accuracy": 0.4285714328289032,
+      "validation_severity_f1_macro": 0.21218206360936165
+    },
+    {
+      "epoch": 5.0,
+      "train_loss": 9.33683156967163,
+      "validation_mechanism_brier": 0.18571582436561584,
+      "validation_mechanism_f1_macro": 0.08843537739345006,
+      "validation_mechanism_f1_micro": 0.21052631735801697,
+      "validation_severity_accuracy": 0.523809552192688,
+      "validation_severity_f1_macro": 0.17741934955120087
+    }
+  ],
+  "scientific_claim": false,
+  "test_metrics": {
+    "mechanism_brier": 0.19772839546203613,
+    "mechanism_f1_macro": 0.0979591863495963,
+    "mechanism_f1_micro": 0.20000000298023224,
+    "severity_accuracy": 0.5396825671195984,
+    "severity_f1_macro": 0.2142857201397419
+  }
+}

@@ -25,10 +25,10 @@ keys.env
 
 # Restricted/private data and generated artifacts
 /data/
-private/
-artifacts/
-checkpoints/
-models/
+/private/
+/artifacts/
+/checkpoints/
+/models/
 *.pkl
 *.pickle
 *.pth
