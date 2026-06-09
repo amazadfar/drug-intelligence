@@ -6,7 +6,8 @@ This repository is the public-safe foundation for an end-to-end drug intelligenc
 
 ## Status
 
-This public repository is in its first milestone: publication-safe foundation.
+This public repository has completed the first local milestone and is moving
+through the second: chemistry contracts and legacy baseline audit.
 
 Included now:
 - repository structure for a clean Python package
@@ -14,6 +15,10 @@ Included now:
 - safety statement for research-only use
 - CI, tests, issue templates, and roadmap
 - sample-data directories without restricted data
+- stdlib data schemas for drug, interaction, reference, and molecular feature records
+- optional RDKit feature extraction module
+- framework-neutral molecular graph conversion
+- legacy GNN baseline audit and model card
 
 Not included:
 - raw DrugBank data
@@ -42,6 +47,8 @@ For full-scale experiments, users must bring their own properly licensed data. S
 - [Publication Boundary](docs/publication-boundary.md)
 - [Licensing Notes](docs/licensing.md)
 - [Safety Statement](docs/safety.md)
+- [Public Fixture Data Card](docs/data-card-public-fixtures.md)
+- [Legacy GNN Model Card](docs/model-card-gnn-baseline.md)
 
 ## Planned Architecture
 
@@ -57,7 +64,7 @@ data ingestion
 
 ## Roadmap
 
-The current milestone is focused on a public-safe foundation. Upcoming milestones are tracked in [docs/roadmap.md](docs/roadmap.md):
+Milestone progress is tracked in [docs/roadmap.md](docs/roadmap.md):
 
 1. Public-safe foundation
 2. Chemistry feature extraction and legacy baseline audit
@@ -87,6 +94,12 @@ Run local checks:
 python -m compileall src tests
 python -m pytest -q
 python -m ruff check .
+```
+
+Install optional chemistry dependencies when working on RDKit-backed features:
+
+```bash
+python -m pip install -e ".[dev,chem]"
 ```
 
 ## Repository Layout

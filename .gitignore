@@ -24,7 +24,7 @@ keys.env
 *.token
 
 # Restricted/private data and generated artifacts
-data/
+/data/
 private/
 artifacts/
 checkpoints/

@@ -84,6 +84,29 @@ rg -n "(public_user_password|keys\\.env|api[_-]?key|secret|token|password|DrugBa
 result: documentation-only warnings; no secret values found
 ```
 
+Milestone 2 validation rerun after adding schemas, fixtures, chemistry modules,
+and legacy baseline documentation:
+
+```text
+.venv/bin/python -m pip install -e ".[dev,chem]"
+result: passed; installed repo dev tools and RDKit optional extra
+
+.venv/bin/python -m compileall src tests
+result: passed
+
+.venv/bin/python -m pytest -q
+result: passed, 10 tests
+
+.venv/bin/python -m ruff check .
+result: passed
+
+find . -path './.git' -prune -o -path './.venv' -prune -o -type f -size +1M -print
+result: no files found
+
+rg -n "(public_user_password|keys\\.env|api[_-]?key|secret|token|password|DrugBank)" .
+result: documentation-only warnings; no secret values found
+```
+
 Not executed because tools were not installed in this environment:
 
 ```text

@@ -23,6 +23,20 @@ Target outcome:
 - create synthetic fixtures
 - convert historical GNN results into a model card with caveats
 
+Status:
+- complete locally; not yet published to GitHub
+
+Evidence:
+- `src/drug_intelligence/data/schemas.py`
+- `src/drug_intelligence/chemistry/rdkit_features.py`
+- `src/drug_intelligence/chemistry/graph_conversion.py`
+- `examples/sample_drugs.jsonl`
+- `examples/sample_interactions.jsonl`
+- `examples/sample_references.jsonl`
+- `docs/data-card-public-fixtures.md`
+- `docs/model-card-gnn-baseline.md`
+- `reports/2026-06-09-legacy-baseline-audit.md`
+
 ## Milestone 3: Reproducible GNN Benchmark
 
 Target outcome:
