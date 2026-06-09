@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+keys.env
+*.pem
+*.key
+*.token
+
+# Restricted/private data and generated artifacts
+data/
+private/
+artifacts/
+checkpoints/
+models/
+*.pkl
+*.pickle
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+*.jsonl.gz
+*.csv.gz
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
