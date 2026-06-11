@@ -67,8 +67,8 @@ Target outcome:
 - add validation checks and example queries
 
 Status:
-- public fixture KG foundation complete locally
-- pending GitHub push and CI validation for this milestone
+- public fixture KG foundation complete
+- pushed to GitHub and covered by CI
 
 Evidence:
 - `src/drug_intelligence/graph/`

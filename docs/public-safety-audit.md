@@ -2,7 +2,7 @@
 
 Date: 2026-06-09
 
-Status: Milestone 4 audit, local validation pass complete.
+Status: Milestone 4 audit, local and GitHub validation pass complete.
 
 ## Scope
 
@@ -156,6 +156,8 @@ result: no files found
 rg -n "(public_user_password|keys\\.env|api[_-]?key|secret|token|password|DrugBank)" .
 result: documentation-only warnings; no secret values found
 ```
+
+GitHub Actions CI also passed on commit `58e8ef6`.
 
 The KG export artifacts are small public-fixture files:
 
