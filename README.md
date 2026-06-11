@@ -7,7 +7,8 @@ This repository is the public-safe foundation for an end-to-end drug intelligenc
 ## Status
 
 This public repository has completed the public-safe foundation, chemistry
-contracts, legacy baseline audit, and public-fixture GNN benchmark plumbing.
+contracts, legacy baseline audit, public-fixture GNN benchmark plumbing, and
+the first Neo4j-compatible biomedical knowledge graph export layer.
 
 Included now:
 - repository structure for a clean Python package
@@ -22,6 +23,9 @@ Included now:
 - config-driven CPU GNN benchmark with five encoder families
 - random, drug-disjoint, and scaffold-group split APIs
 - synthetic benchmark metrics/report artifacts
+- provenance-aware KG schema and validator
+- deterministic public-fixture KG exports to JSON and Neo4j Cypher
+- sample graph queries for interaction, evidence, and provenance inspection
 
 Not included:
 - raw DrugBank data
@@ -52,6 +56,7 @@ For full-scale experiments, users must bring their own properly licensed data. S
 - [Safety Statement](docs/safety.md)
 - [Public Fixture Data Card](docs/data-card-public-fixtures.md)
 - [Legacy GNN Model Card](docs/model-card-gnn-baseline.md)
+- [Biomedical Knowledge Graph](docs/knowledge-graph.md)
 
 ## Planned Architecture
 
@@ -122,6 +127,16 @@ python scripts/train_gnn_baseline.py \
 See [docs/gnn-benchmark.md](docs/gnn-benchmark.md) for supported encoders,
 split strategies, output contracts, and limitations.
 
+Export the public fixture knowledge graph:
+
+```bash
+python scripts/export_kg_sample.py --output-dir reports/sample-kg
+```
+
+The export emits deterministic JSON and Neo4j Cypher artifacts. See
+[docs/knowledge-graph.md](docs/knowledge-graph.md) for the schema, validation
+rules, and sample Cypher queries.
+
 ## Repository Layout
 
 ```text
@@ -131,7 +146,7 @@ src/drug_intelligence/ Python package
 tests/                 CPU-safe tests
 scripts/               future reproducible workflows
 notebooks/             future reviewed notebooks
-reports/               future experiment reports
+reports/               public fixture benchmark and KG export artifacts
 ```
 
 ## License

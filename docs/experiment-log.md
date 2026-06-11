@@ -27,3 +27,13 @@ Each experiment should include:
 - encoder: GIN
 - epochs: 5
 - split: deterministic random split
+
+### 2026-06-11: Public Fixture Knowledge Graph Export
+
+- JSON artifact: `reports/sample-kg/sample-kg.json`
+- Neo4j Cypher artifact: `reports/sample-kg/sample-kg.cypher`
+- purpose: validate KG schema, provenance rules, deterministic export, and sample query generation
+- scientific claim: false
+- dataset: 10 public synthetic molecule records, 1 synthetic interaction, 1 synthetic reference
+- graph size: 26 nodes, 37 relationships
+- validation: duplicate node/relationship checks, required node properties, endpoint existence, relationship provenance

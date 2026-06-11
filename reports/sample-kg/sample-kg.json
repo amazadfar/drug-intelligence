@@ -1,0 +1,678 @@
+{
+  "metadata": {
+    "builder": "fixture",
+    "drugs": 10,
+    "interactions": 1,
+    "references": 1
+  },
+  "nodes": [
+    {
+      "id": "source:synthetic",
+      "labels": [
+        "Source"
+      ],
+      "properties": {
+        "id": "source:synthetic",
+        "name": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-aspirin-like",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored fixture resembling a small molecule record. Not copied from a restricted database.",
+        "drug_id": "synthetic-aspirin-like",
+        "id": "drug:synthetic-aspirin-like",
+        "name": "Synthetic Aspirin-Like Molecule",
+        "normalized_name": "synthetic_aspirin_like",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug_type:small_molecule",
+      "labels": [
+        "DrugType"
+      ],
+      "properties": {
+        "id": "drug_type:small_molecule",
+        "name": "small_molecule",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-aspirin-like",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-aspirin-like",
+        "representation": "CC(=O)OC1=CC=CC=C1C(=O)O",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-caffeine-like",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored fixture for public schema and chemistry tests. Not copied from a restricted database.",
+        "drug_id": "synthetic-caffeine-like",
+        "id": "drug:synthetic-caffeine-like",
+        "name": "Synthetic Caffeine-Like Molecule",
+        "normalized_name": "synthetic_caffeine_like",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-caffeine-like",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-caffeine-like",
+        "representation": "Cn1cnc2n(C)c(=O)n(C)c(=O)c12",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-ethanol",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored chemistry fixture with no interaction claim.",
+        "drug_id": "synthetic-ethanol",
+        "id": "drug:synthetic-ethanol",
+        "name": "Synthetic Ethanol Fixture",
+        "normalized_name": "synthetic_ethanol",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-ethanol",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-ethanol",
+        "representation": "CCO",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-acetic-acid",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored chemistry fixture with no interaction claim.",
+        "drug_id": "synthetic-acetic-acid",
+        "id": "drug:synthetic-acetic-acid",
+        "name": "Synthetic Acetic Acid Fixture",
+        "normalized_name": "synthetic_acetic_acid",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-acetic-acid",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-acetic-acid",
+        "representation": "CC(=O)O",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-benzene",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored chemistry fixture with no interaction claim.",
+        "drug_id": "synthetic-benzene",
+        "id": "drug:synthetic-benzene",
+        "name": "Synthetic Benzene Fixture",
+        "normalized_name": "synthetic_benzene",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-benzene",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-benzene",
+        "representation": "c1ccccc1",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-pyridine",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored chemistry fixture with no interaction claim.",
+        "drug_id": "synthetic-pyridine",
+        "id": "drug:synthetic-pyridine",
+        "name": "Synthetic Pyridine Fixture",
+        "normalized_name": "synthetic_pyridine",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-pyridine",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-pyridine",
+        "representation": "n1ccccc1",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-acetone",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored chemistry fixture with no interaction claim.",
+        "drug_id": "synthetic-acetone",
+        "id": "drug:synthetic-acetone",
+        "name": "Synthetic Acetone Fixture",
+        "normalized_name": "synthetic_acetone",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-acetone",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-acetone",
+        "representation": "CC(=O)C",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-ethylamine",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored chemistry fixture with no interaction claim.",
+        "drug_id": "synthetic-ethylamine",
+        "id": "drug:synthetic-ethylamine",
+        "name": "Synthetic Ethylamine Fixture",
+        "normalized_name": "synthetic_ethylamine",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-ethylamine",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-ethylamine",
+        "representation": "CCN",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-phenol",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored chemistry fixture with no interaction claim.",
+        "drug_id": "synthetic-phenol",
+        "id": "drug:synthetic-phenol",
+        "name": "Synthetic Phenol Fixture",
+        "normalized_name": "synthetic_phenol",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-phenol",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-phenol",
+        "representation": "Oc1ccccc1",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "drug:synthetic-cyclohexane",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "description": "Hand-authored chemistry fixture with no interaction claim.",
+        "drug_id": "synthetic-cyclohexane",
+        "id": "drug:synthetic-cyclohexane",
+        "name": "Synthetic Cyclohexane Fixture",
+        "normalized_name": "synthetic_cyclohexane",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "molecule_feature:synthetic-cyclohexane",
+      "labels": [
+        "MoleculeFeature"
+      ],
+      "properties": {
+        "id": "molecule_feature:synthetic-cyclohexane",
+        "representation": "C1CCCCC1",
+        "representation_type": "smiles",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "reference:synthetic-ref-001",
+      "labels": [
+        "Reference"
+      ],
+      "properties": {
+        "abstract": "This hand-authored fixture exists only to exercise evidence schemas.",
+        "id": "reference:synthetic-ref-001",
+        "reference_id": "synthetic-ref-001",
+        "source": "synthetic",
+        "title": "Synthetic fixture reference for drug intelligence examples",
+        "url": null
+      }
+    },
+    {
+      "id": "interaction:synthetic-int-001",
+      "labels": [
+        "Interaction"
+      ],
+      "properties": {
+        "evidence": "Synthetic fixture only. No clinical claim is implied.",
+        "id": "interaction:synthetic-int-001",
+        "interaction_id": "synthetic-int-001",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "mechanism:metabolism",
+      "labels": [
+        "Mechanism"
+      ],
+      "properties": {
+        "id": "mechanism:metabolism",
+        "name": "metabolism",
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "severity:1",
+      "labels": [
+        "Severity"
+      ],
+      "properties": {
+        "id": "severity:1",
+        "level": 1,
+        "name": "minor",
+        "source": "synthetic"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "drug:synthetic-aspirin-like:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-aspirin-like",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-aspirin-like:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-aspirin-like",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-aspirin-like:has_molecular_feature:molecule_feature:synthetic-aspirin-like",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-aspirin-like",
+      "target_id": "molecule_feature:synthetic-aspirin-like",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "drug:synthetic-caffeine-like:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-caffeine-like",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-caffeine-like:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-caffeine-like",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-caffeine-like:has_molecular_feature:molecule_feature:synthetic-caffeine-like",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-caffeine-like",
+      "target_id": "molecule_feature:synthetic-caffeine-like",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "drug:synthetic-ethanol:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-ethanol",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-ethanol:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-ethanol",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-ethanol:has_molecular_feature:molecule_feature:synthetic-ethanol",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-ethanol",
+      "target_id": "molecule_feature:synthetic-ethanol",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "drug:synthetic-acetic-acid:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-acetic-acid",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-acetic-acid:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-acetic-acid",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-acetic-acid:has_molecular_feature:molecule_feature:synthetic-acetic-acid",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-acetic-acid",
+      "target_id": "molecule_feature:synthetic-acetic-acid",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "drug:synthetic-benzene:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-benzene",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-benzene:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-benzene",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-benzene:has_molecular_feature:molecule_feature:synthetic-benzene",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-benzene",
+      "target_id": "molecule_feature:synthetic-benzene",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "drug:synthetic-pyridine:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-pyridine",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-pyridine:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-pyridine",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-pyridine:has_molecular_feature:molecule_feature:synthetic-pyridine",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-pyridine",
+      "target_id": "molecule_feature:synthetic-pyridine",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "drug:synthetic-acetone:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-acetone",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-acetone:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-acetone",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-acetone:has_molecular_feature:molecule_feature:synthetic-acetone",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-acetone",
+      "target_id": "molecule_feature:synthetic-acetone",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "drug:synthetic-ethylamine:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-ethylamine",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-ethylamine:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-ethylamine",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-ethylamine:has_molecular_feature:molecule_feature:synthetic-ethylamine",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-ethylamine",
+      "target_id": "molecule_feature:synthetic-ethylamine",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "drug:synthetic-phenol:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-phenol",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-phenol:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-phenol",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-phenol:has_molecular_feature:molecule_feature:synthetic-phenol",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-phenol",
+      "target_id": "molecule_feature:synthetic-phenol",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "drug:synthetic-cyclohexane:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-cyclohexane",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "drug:synthetic-cyclohexane:has_type:drug_type:small_molecule",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-cyclohexane",
+      "target_id": "drug_type:small_molecule",
+      "type": "HAS_TYPE"
+    },
+    {
+      "id": "drug:synthetic-cyclohexane:has_molecular_feature:molecule_feature:synthetic-cyclohexane",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "drug:synthetic-cyclohexane",
+      "target_id": "molecule_feature:synthetic-cyclohexane",
+      "type": "HAS_MOLECULAR_FEATURE"
+    },
+    {
+      "id": "reference:synthetic-ref-001:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "reference:synthetic-ref-001",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "interaction:synthetic-int-001:derived_from:synthetic",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "interaction:synthetic-int-001",
+      "target_id": "source:synthetic",
+      "type": "DERIVED_FROM"
+    },
+    {
+      "id": "interaction:synthetic-int-001:involves:a:synthetic-aspirin-like",
+      "properties": {
+        "role": "a",
+        "source": "synthetic"
+      },
+      "source_id": "interaction:synthetic-int-001",
+      "target_id": "drug:synthetic-aspirin-like",
+      "type": "INVOLVES"
+    },
+    {
+      "id": "interaction:synthetic-int-001:involves:b:synthetic-caffeine-like",
+      "properties": {
+        "role": "b",
+        "source": "synthetic"
+      },
+      "source_id": "interaction:synthetic-int-001",
+      "target_id": "drug:synthetic-caffeine-like",
+      "type": "INVOLVES"
+    },
+    {
+      "id": "interaction:synthetic-int-001:has_mechanism:metabolism",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "interaction:synthetic-int-001",
+      "target_id": "mechanism:metabolism",
+      "type": "HAS_MECHANISM"
+    },
+    {
+      "id": "interaction:synthetic-int-001:has_severity:metabolism:1",
+      "properties": {
+        "mechanism": "metabolism",
+        "source": "synthetic"
+      },
+      "source_id": "interaction:synthetic-int-001",
+      "target_id": "severity:1",
+      "type": "HAS_SEVERITY"
+    },
+    {
+      "id": "interaction:synthetic-int-001:supported_by:synthetic-ref-001",
+      "properties": {
+        "source": "synthetic"
+      },
+      "source_id": "interaction:synthetic-int-001",
+      "target_id": "reference:synthetic-ref-001",
+      "type": "SUPPORTED_BY"
+    }
+  ]
+}

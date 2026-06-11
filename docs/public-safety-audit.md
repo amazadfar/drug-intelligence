@@ -2,7 +2,7 @@
 
 Date: 2026-06-09
 
-Status: Milestone 1 audit, local validation pass complete.
+Status: Milestone 4 audit, local validation pass complete.
 
 ## Scope
 
@@ -134,6 +134,38 @@ result: documentation-only warnings; no secret values found
 
 Local Python was 3.14.5. Torch/PyG emitted upstream deprecation warnings for
 Python 3.14 internals; the GitHub Actions workflow targets Python 3.11.
+
+Milestone 4 validation after adding the biomedical knowledge graph foundation:
+
+```text
+.venv/bin/python scripts/export_kg_sample.py --output-dir reports/sample-kg
+result: passed; generated 26 nodes and 37 relationships
+
+.venv/bin/python -m compileall src tests scripts
+result: passed
+
+.venv/bin/python -m pytest -q
+result: passed, 24 tests
+
+.venv/bin/python -m ruff check .
+result: passed
+
+find . -path './.git' -prune -o -path './.venv' -prune -o -type f -size +1M -print
+result: no files found
+
+rg -n "(public_user_password|keys\\.env|api[_-]?key|secret|token|password|DrugBank)" .
+result: documentation-only warnings; no secret values found
+```
+
+The KG export artifacts are small public-fixture files:
+
+```text
+reports/sample-kg/sample-kg.json
+reports/sample-kg/sample-kg.cypher
+```
+
+The exported graph contains synthetic fixture data only and makes no clinical or
+scientific claims.
 
 Not executed because tools were not installed in this environment:
 

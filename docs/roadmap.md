@@ -13,7 +13,7 @@ Target outcome:
 - no restricted data or secrets
 
 Status:
-- complete locally; not yet published to GitHub
+- complete, pushed to GitHub, and covered by CI
 
 ## Milestone 2: Chemistry Feature Extraction and Legacy Baseline Audit
 
@@ -24,7 +24,7 @@ Target outcome:
 - convert historical GNN results into a model card with caveats
 
 Status:
-- complete locally; not yet published to GitHub
+- complete, pushed to GitHub, and covered by CI
 
 Evidence:
 - `src/drug_intelligence/data/schemas.py`
@@ -47,6 +47,7 @@ Target outcome:
 
 Status:
 - public fixture benchmark implementation complete locally
+- pushed to GitHub and covered by CI
 - full scientific benchmark pending a legal, versioned dataset manifest
 
 Evidence:
@@ -64,6 +65,18 @@ Target outcome:
 - define KG node and edge schema
 - export sample triples and Neo4j Cypher
 - add validation checks and example queries
+
+Status:
+- public fixture KG foundation complete locally
+- pending GitHub push and CI validation for this milestone
+
+Evidence:
+- `src/drug_intelligence/graph/`
+- `scripts/export_kg_sample.py`
+- `docs/knowledge-graph.md`
+- `reports/sample-kg/sample-kg.json`
+- `reports/sample-kg/sample-kg.cypher`
+- `tests/test_knowledge_graph.py`
 
 ## Milestone 5: Evidence-Grounded Retrieval Assistant
 
